@@ -1,0 +1,11 @@
+echo "read a number"
+read n
+s=0
+
+while [ $n -gt 0 ]
+do
+d=$(($n%10))
+s=$(($s+$d))
+n=$(($n/10))
+done
+echo "sum of digits:"$s
